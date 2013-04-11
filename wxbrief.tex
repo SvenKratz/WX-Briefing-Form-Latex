@@ -1,0 +1,85 @@
+\documentclass[10pt]{letter}
+\usepackage{tabularx}
+
+
+\newcommand{\uscore}[0]{\rule{3cm}{0.4pt}}
+\newcommand{\luscore}[0]{\rule{3.75cm}{0.4pt}}
+
+\newcommand{\wspace}[0]{\vspace{\stretch{1}}}
+\textwidth = 490pt
+\textheight = 675pt
+\hoffset = -1in
+\voffset = -1.75in
+\renewcommand{\arraystretch}{1.75} 
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+\textbf{Weather Briefing 1 800 992 7433 / 1 1800 WX Brief} \begin{footnotesize}{Briefer, Northern California: 1-22-1}\end{footnotesize}
+
+\begin{tabular}{lllc}
+\hline Type of briefing: & $\bigcirc$ Standard $\bigcirc$ Abbreviated $\bigcirc$ Outlook & Departure Time: & \uscore \\
+Type of flight: & VFR $\bigcirc$ IFR $\bigcirc$ & Cruising Altitude: & \uscore \\
+Aircraft Number: & \uscore & Route of Flight: & \uscore \\
+Type of Aircraft: & \uscore & Destination: & \uscore \\ 
+Departure Airport: & \uscore & Estimated Time Enroute: & \uscore \\\hline
+\end{tabular}
+\end{center}
+\begin{flushleft}
+Adverse conditions
+
+\wspace
+Synopsis of weather systems
+
+\wspace
+PIREPs
+
+\wspace
+%\renewcommand{\arraystretch}{1.0} 
+\begin{center}Weather summarized (including PIREPs)\end{center}
+\begin{footnotesize}
+\begin{tabularx}{\textwidth}{|X|X|X|X|X|X|X|X|X|}
+\hline\textbf{Location} & \textbf{Time} & \textbf{Wind} & \textbf{Visibility} & \textbf{Weather} & \textbf{Sky} & \textbf{Temp.} & \textbf{Dew Pt.} &\textbf{Altimeter}\\
+\hline & & & & & & & &  \\
+\hline & & & & & & & &  \\
+\hline & & & & & & & &  \\\hline
+\end{tabularx}
+
+\end{footnotesize}
+
+
+
+Enroute forecast
+
+\wspace
+Destination forecast
+
+\wspace
+\renewcommand{\arraystretch}{1.0} 
+\begin{center}Winds aloft\end{center}
+\begin{footnotesize}
+\begin{tabularx}{\textwidth}{lc|lc|lc}
+Station & \luscore & Station & \luscore & Station & \luscore \\
+3000' & \luscore & 3000' & \luscore & 3000' & \luscore \\
+6000' & \luscore & 6000' & \luscore & 6000' & \luscore \\
+9000' & \luscore & 9000' & \luscore & 9000' & \luscore \\
+\end{tabularx}
+\end{footnotesize}
+
+
+\wspace
+TFRs
+
+\wspace
+NOTAMs
+
+\wspace
+Known ATC delays
+
+\end{flushleft}
+
+
+
+
+\end{document}
